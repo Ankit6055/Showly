@@ -160,3 +160,52 @@ main{
 .slider > img{
     border-radius: 5px;
 }
+
+/* *****************Main Section CSS************************* */
+
+body {
+    background-color: #000000;
+}
+
+/* .margin1 {
+    margin-bottom: 10px;
+} */
+
+/* .main {
+    background-color: #000000;
+} */
+
+.frame {
+    margin-bottom: 3px;
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+}
+
+.all {
+    width: 1400px;
+    /* margin-left: 119px; */
+    /* display: flex; */
+    justify-content: center;
+    /* background-color: #1c012f; */
+    background-color: #180a0a;
+}
+.heading {
+    color: white;
+    font-family: sans-serif;
+    margin-left: 55px;
+    font-size: 19px;
+}
+.Section1 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    /* border: 2px solid yellow; */
+    margin-right: -50px;
+    margin-left: 50px;
+}
+
+img {
+    border-radius: 10px;
+    height: 210px;
+}
