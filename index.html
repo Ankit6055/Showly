@@ -3,124 +3,184 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Netflix Clone</title>
     <link rel="stylesheet" href="index.css">
-
-
 </head>
 <body>
-    <nav>
-        <div class="navFirstHalf">
-
-            <div class="logo">
-                <img src="./Images/netflix.png" alt="">
+    <!-- Navigation Bar -->
+    <nav class="main-nav">
+        <div class="nav-container">
+            <div class="nav-left">
+                <a href="#" class="logo">
+                    <img src="./Images/netflix.png" alt="Netflix Logo">
+                </a>
+                <ul class="nav-links">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">TV Shows</a></li>
+                    <li><a href="#">Movies</a></li>
+                    <li><a href="#">New & Popular</a></li>
+                    <li><a href="#">My List</a></li>
+                    <li><a href="#">Browse by Language</a></li>
+                </ul>
             </div>
-            <div class="tabs">
-                <h6>Home</h6>
-                <h6>Tv Shows</h6>
-                <h6>Movies</h6>
-                <h6>News & Popular</h6>
-                <h6>My List</h6>
-                <h6>Browse by Language</h6>
+            
+            <div class="nav-right">
+                <button class="nav-icon">
+                    <img src="./Images/search.png" alt="Search">
+                </button>
+                <button class="nav-icon">
+                    <img src="./Images/bell.png" alt="Notifications">
+                </button>
+                <div class="profile-picture">
+                    <img src="./Images/pfp.jpg" alt="Profile">
+                </div>
             </div>
-
-        </div>
-        <div class="navSecondHalf">
-
-            <div class="search">
-                <img src="./Images/search.png" alt="">
-            </div>
-            <div class="bell">
-                <img src="./Images/bell.png" alt="">
-            </div>
-            <div class="profile">
-                <img src="./Images/pfp.jpg" alt="">
-            </div>
-
         </div>
     </nav>
 
-    <main>
+    <!-- Main Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <img src="./Images/image.png" class="hero-title" alt="Featured Title">
+            <p class="hero-description">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Culpa, possimus quos? 
+                Rem odit sunt at quos necessitatibus. Voluptatibus, esse repellat?
+            </p>
+            <div class="hero-actions">
+                <button class="btn-play">
+                    <img src="./Images/play.png" alt="Play">
+                    Play
+                </button>
+                <button class="btn-more-info">
+                    <img src="./Images/info.png" alt="More Info">
+                    More Info
+                </button>
+            </div>
+        </div>
+    </section>
 
-        <div class="title">
-            <img src="./Images/image.png" alt="">
-        </div>
-        <div class="des">
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Culpa, possimus quos? Rem odit sunt at quos necessitatibus. Voluptatibus, esse repellat?</p>
-        </div>
-        <div class="btns">
-            <button class="play">
-                <img src="./Images/play.png" alt=""><p>Play</p>
-            </button>
-            <button class="moreinfo">
-                <img src="./Images/info.png" alt=""><p>More info</p>
-            </button>
-        </div>
+    <!-- Content Sections -->
+    <main class="content-container">
+        <!-- My List Section -->
+        <!-- <section class="content-section">
+            <h2 class="section-heading">My List</h2>
+            <div class="movies-row">
+                <div class="movie-card">
+                    <img src="./Images/vs.png" alt="Vs">
+                </div>
+                <div class="movie-card">
+                    <img src="./Images/onepiece.png" alt="One Piece">
+                </div>
+                <div class="movie-card">
+                    <img src="./Images/cyber.png" alt="Cyber">
+                </div>
+                <div class="movie-card">
+                    <img src="./Images/ds.png" alt="Demon Slayer">
+                </div>
+                <div class="movie-card">
+                    <img src="./Images/mirai.png" alt="Mirai">
+                </div>
+                <div class="movie-card">
+                    <img src="./Images/rascal.png" alt="Rascal">
+                </div>
+                <div class="movie-card">
+                    <img src="./Images/bc.png" alt="Black Clover">
+                </div>
+            </div>
+        </section> -->
 
-        <h5 class="mylist">My List ></h5>
-        <div class="slider">
-            <img src="./Images/vs.png" alt="">
-            <img src="./Images/onepiece.png" alt="">
-            <img src="./Images/cyber.png" alt="">
-            <img src="./Images/ds.png" alt="">
-            <img src="./Images/mirai.png" alt="">
-            <img src="./Images/rascal.png" alt="">
-            <img src="./Images/bc.png" alt="">
-            <img src="./Images/ds.png" alt="">
-            <img src="./Images/mirai.png" alt="">
-            <img src="./Images/rascal.png" alt="">
-            <img src="./Images/bc.png" alt="">
-        </div>
-        <h5 class="mylist">My List ></h5>
-        <div class="slider">
-            <img src="./Images/vs.png" alt="">
-            <img src="./Images/onepiece.png" alt="">
-            <img src="./Images/cyber.png" alt="">
-            <img src="./Images/ds.png" alt="">
-            <img src="./Images/mirai.png" alt="">
-            <img src="./Images/rascal.png" alt="">
-            <img src="./Images/bc.png" alt="">
-        </div>
+        <!-- Top Movies Section -->
+        <section class="content-section">
+            <h2 class="section-heading">Top Movies in India Today</h2>
+            <div class="movies-row">
+                <div class="movie-card">
+                    <img src="https://occ-0-4995-2164.1.nflxso.net/dnm/api/v6/mAcAr9TxZIVbINe88xb3Teg5_OA/AAAABXL-CdqBIJpELXwtWQliB94tD9QIgJgwyIpkLwXRRfi-mGEIUgBd7KmQYRPDaqjNnW1QxKDc-GE2aSeu7dNpB37O1_WjM4r9nwmTR4BeQFr05x3Snudb08KLCl0guB8xy43xGmozNJaKBq8nfwk4V2Yai_rMYpZK-IWWhPmHQNzZWKWeNhyOWEBi3tXcFS50aXfeni3o8pedYDB2bAGVvpLRTD8toZG5zKLsrmpPNIRtCt6YSarGuZfzFkosDsrBS9vX2MoLAgH-r7IQmAfU735FCdOZdnt7mrjpSx5wm2QLub1NdEYXbVQJ-tE_fgkklKbUvCDGp1z3Vo7dX8b6p-A.webp?r=4bd" alt="Movie 1">
+                </div>
+                <div class="movie-card">
+                    <img src="https://occ-0-4995-2164.1.nflxso.net/dnm/api/v6/mAcAr9TxZIVbINe88xb3Teg5_OA/AAAABRh-gv1FQdodOSeMDRsLwy4WESuMjUaflt5lJieY8l_XVXnoZuabtBVmGfyYgqj-spmMyW62FOxFK-YxssQ-z5dmMEoTSre0Kdx8E6y74dzKprPzKEsvlsZONM8rQ4EQk0TF2OLJtz-Bc_hnwSblBS0TvIw4Xik5Iyk.webp?r=e1d" alt="Movie 2">
+                </div>
+                <div class="movie-card">
+                    <img src="https://occ-0-4995-2164.1.nflxso.net/dnm/api/v6/mAcAr9TxZIVbINe88xb3Teg5_OA/AAAABSPpe3Tz1eBPcSTnJFlzbTdsC0tX_aTAcHEdJ_zjPFal5k32DZeFBSJDbRNvdPs_3kc8nKFCKlwtoAHNA0D9gzj6PXysCIm-Taan71b7nJOujCJuZ-WRKkHdCA_A09MR1M5qtpHDPhUIzavGH-cuH7MlF4Rh-nRerMnz6XcOosWoP7qSPhtIUF9rBkvXcIIGSfK_qUvSD76B3wnH1GQjNEJ49ayg7RF9Ycq7u1r5WlAJ1vJE1JU3vOhpCWl_jlNnWqGG_sVP6-MGx25-U_H1Tw8dx4igf4q8FTpbWPNFus1FJjChLZy2L58j7ooZ6vreV2uGNUCy0jyhNDIiUHov2pQ.webp?r=9db" alt="Movie 3">
+                </div>
+                <div class="movie-card">
+                    <img src="https://occ-0-4995-2164.1.nflxso.net/dnm/api/v6/mAcAr9TxZIVbINe88xb3Teg5_OA/AAAABXxhL8En7z0F1Y5caNx_dh_8Ne4-EMgfQ523hnGfGoMU4npo35EPk4bSmPEX2T4U7UltooGiNkiapDJ70kodFdH0DzZLRiE59f7L2FXbB-fgGzFXLkNBzaYOUMeY1OodZCC58V8izXXlNUEDMSlvi-wiOvNObkNLnyM.webp?r=bf7" alt="Movie 4">
+                </div>
+                <div class="movie-card">
+                    <img src="https://occ-0-4995-2164.1.nflxso.net/dnm/api/v6/mAcAr9TxZIVbINe88xb3Teg5_OA/AAAABfSrqG2ZeXz14MTvIgzU5T2TkrrWtGp8Rs2mpuPuCMnq7I63eX2CeqmIFqqXzgulJ46k51wBz-HYjCm_hG5q5rOKbB4dxpHvf6hK6ThYUjDZKKdzg3vlVuCTyLFYUde6LIaSfnB6JIxKJph2DbLKA0997TtNEA36rIiNY_tG2NMucokJxQFj9Z-GkOEB87uWaLonKkTEqpvEciKB-BnAe2-0d7fKDhClqb8WvYUHtWunf74FcytNSQcFXx5CAghaKd9ftBDANLJ2CZvBqtkyJAnv1e3Z.webp?r=ee3" alt="Movie 5">
+                </div>
+                <div class="movie-card">
+                    <img src="https://occ-0-4995-2164.1.nflxso.net/dnm/api/v6/mAcAr9TxZIVbINe88xb3Teg5_OA/AAAABQLOIk_CPu1_91894Qhx5ACtbQCr-javLTVWQFE1PHiizm6o6yTRH0ECzlBv4eAtkmX11DxS4IUHTsIUxBLm9nex-VL4LN3aoHeb0_P6V8jb8kVRXkf8p_p_sQMBGOOQLI2jVYNSsTVTNT_10ZDGWP6Kr3dQeVvl2jQ.webp?r=978" alt="Movie 6">
+                </div>
+                <div class="movie-card">
+                    <img src="https://occ-0-4995-2164.1.nflxso.net/dnm/api/v6/mAcAr9TxZIVbINe88xb3Teg5_OA/AAAABQtUMYNNpln_up5LTmzonRACc83GmRhAgZrG-58ImQVRmXpyU2risRVmOjmBvU9vVGrmM_LZHnwwmXE0g6fkv7wrs9TsSE5Z7pSlkAv-YbycgoUmTpyJQtmuDNB2g8dKfeeAmAoA8T4IvXsxk4StpbHV4_rDPQXTGNsOC1agtMPVAn_1zanwwgfnaZQSsYTLOOVwfARo4APRxuONbTiBPAAIOl_XP_paKqZiAPfM9x7eAGXiuNOY4XrrO2FDuKwolTNfr7m5mtOCxV_RwmX96S10F9u1.webp?r=088" alt="Movie 7">
+                </div>
+                <div class="movie-card">
+                    <img src="https://occ-0-4995-2164.1.nflxso.net/dnm/api/v6/mAcAr9TxZIVbINe88xb3Teg5_OA/AAAABdm9ogkZ4RzNNM_czPpwiX4pUC91gEGohOIQai_vxg-U2DH4vS6l4kJ87hYbMpe7oOuHYtYJR3bPiRFVmsPAi_yiLUOewWUbeapZHIqbeh2PRKxs7H0Va53_gmw5MQcNz-o7lMDdZ9XyijdWMB44lVwCktsF6FQUjSM.webp?r=680" alt="Movie 8">
+                </div>
+            </div>
+        </section>
 
-        <!-- *************************Main Section************************************* -->
-        <div class="main">
-            <div class="all">
-                <div class="frame"><h2 class="heading">Top Movies in India Today</h2>
-                    <div class="Section1 margin1">
-                        <img src="https://occ-0-4995-2164.1.nflxso.net/dnm/api/v6/mAcAr9TxZIVbINe88xb3Teg5_OA/AAAABXL-CdqBIJpELXwtWQliB94tD9QIgJgwyIpkLwXRRfi-mGEIUgBd7KmQYRPDaqjNnW1QxKDc-GE2aSeu7dNpB37O1_WjM4r9nwmTR4BeQFr05x3Snudb08KLCl0guB8xy43xGmozNJaKBq8nfwk4V2Yai_rMYpZK-IWWhPmHQNzZWKWeNhyOWEBi3tXcFS50aXfeni3o8pedYDB2bAGVvpLRTD8toZG5zKLsrmpPNIRtCt6YSarGuZfzFkosDsrBS9vX2MoLAgH-r7IQmAfU735FCdOZdnt7mrjpSx5wm2QLub1NdEYXbVQJ-tE_fgkklKbUvCDGp1z3Vo7dX8b6p-A.webp?r=4bd" alt="">
-                        <img src="https://occ-0-4995-2164.1.nflxso.net/dnm/api/v6/mAcAr9TxZIVbINe88xb3Teg5_OA/AAAABRh-gv1FQdodOSeMDRsLwy4WESuMjUaflt5lJieY8l_XVXnoZuabtBVmGfyYgqj-spmMyW62FOxFK-YxssQ-z5dmMEoTSre0Kdx8E6y74dzKprPzKEsvlsZONM8rQ4EQk0TF2OLJtz-Bc_hnwSblBS0TvIw4Xik5Iyk.webp?r=e1d" alt="">
-                        <img src="https://occ-0-4995-2164.1.nflxso.net/dnm/api/v6/mAcAr9TxZIVbINe88xb3Teg5_OA/AAAABSPpe3Tz1eBPcSTnJFlzbTdsC0tX_aTAcHEdJ_zjPFal5k32DZeFBSJDbRNvdPs_3kc8nKFCKlwtoAHNA0D9gzj6PXysCIm-Taan71b7nJOujCJuZ-WRKkHdCA_A09MR1M5qtpHDPhUIzavGH-cuH7MlF4Rh-nRerMnz6XcOosWoP7qSPhtIUF9rBkvXcIIGSfK_qUvSD76B3wnH1GQjNEJ49ayg7RF9Ycq7u1r5WlAJ1vJE1JU3vOhpCWl_jlNnWqGG_sVP6-MGx25-U_H1Tw8dx4igf4q8FTpbWPNFus1FJjChLZy2L58j7ooZ6vreV2uGNUCy0jyhNDIiUHov2pQ.webp?r=9db" alt="">
-                        <img src="https://occ-0-4995-2164.1.nflxso.net/dnm/api/v6/mAcAr9TxZIVbINe88xb3Teg5_OA/AAAABXxhL8En7z0F1Y5caNx_dh_8Ne4-EMgfQ523hnGfGoMU4npo35EPk4bSmPEX2T4U7UltooGiNkiapDJ70kodFdH0DzZLRiE59f7L2FXbB-fgGzFXLkNBzaYOUMeY1OodZCC58V8izXXlNUEDMSlvi-wiOvNObkNLnyM.webp?r=bf7" alt="">
-                        <img src="https://occ-0-4995-2164.1.nflxso.net/dnm/api/v6/mAcAr9TxZIVbINe88xb3Teg5_OA/AAAABfSrqG2ZeXz14MTvIgzU5T2TkrrWtGp8Rs2mpuPuCMnq7I63eX2CeqmIFqqXzgulJ46k51wBz-HYjCm_hG5q5rOKbB4dxpHvf6hK6ThYUjDZKKdzg3vlVuCTyLFYUde6LIaSfnB6JIxKJph2DbLKA0997TtNEA36rIiNY_tG2NMucokJxQFj9Z-GkOEB87uWaLonKkTEqpvEciKB-BnAe2-0d7fKDhClqb8WvYUHtWunf74FcytNSQcFXx5CAghaKd9ftBDANLJ2CZvBqtkyJAnv1e3Z.webp?r=ee3" alt="">
-                        <img src="https://occ-0-4995-2164.1.nflxso.net/dnm/api/v6/mAcAr9TxZIVbINe88xb3Teg5_OA/AAAABQLOIk_CPu1_91894Qhx5ACtbQCr-javLTVWQFE1PHiizm6o6yTRH0ECzlBv4eAtkmX11DxS4IUHTsIUxBLm9nex-VL4LN3aoHeb0_P6V8jb8kVRXkf8p_p_sQMBGOOQLI2jVYNSsTVTNT_10ZDGWP6Kr3dQeVvl2jQ.webp?r=978" alt="">
-                        <img src="https://occ-0-4995-2164.1.nflxso.net/dnm/api/v6/mAcAr9TxZIVbINe88xb3Teg5_OA/AAAABQtUMYNNpln_up5LTmzonRACc83GmRhAgZrG-58ImQVRmXpyU2risRVmOjmBvU9vVGrmM_LZHnwwmXE0g6fkv7wrs9TsSE5Z7pSlkAv-YbycgoUmTpyJQtmuDNB2g8dKfeeAmAoA8T4IvXsxk4StpbHV4_rDPQXTGNsOC1agtMPVAn_1zanwwgfnaZQSsYTLOOVwfARo4APRxuONbTiBPAAIOl_XP_paKqZiAPfM9x7eAGXiuNOY4XrrO2FDuKwolTNfr7m5mtOCxV_RwmX96S10F9u1.webp?r=088" alt="">
-                        <img src="https://occ-0-4995-2164.1.nflxso.net/dnm/api/v6/mAcAr9TxZIVbINe88xb3Teg5_OA/AAAABdm9ogkZ4RzNNM_czPpwiX4pUC91gEGohOIQai_vxg-U2DH4vS6l4kJ87hYbMpe7oOuHYtYJR3bPiRFVmsPAi_yiLUOewWUbeapZHIqbeh2PRKxs7H0Va53_gmw5MQcNz-o7lMDdZ9XyijdWMB44lVwCktsF6FQUjSM.webp?r=680" alt="">
-                    </div></div>
-                <div class="frame"><h2 class="heading">Criminal Investigation TV Shows</h2>
-                        <div class="Section1 margin1">
-                            <img src="https://occ-0-4995-2164.1.nflxso.net/dnm/api/v6/mAcAr9TxZIVbINe88xb3Teg5_OA/AAAABX8tbF8XAIgWLjoOUTzOPAZyqlwp22ncqkWnMMdmnUD5R2o5aqv_dvOXS8QgionXaI6snWhPBIAYmqFDSl4dsf2Yw-ekV2uPzMPUgMZdzBjliVhb0RBvvUH4tdLOwihjrrRn8MwV3cnzISUpm2J4fEt86gqhXJUgCFwFXTAPHeL00VRBoaVdLJm1r3T8HEoOeR_dRdELTYYvEy3H7OD0AwynACXBxkcim1F4ESe4W2GRCyRaMlsxOiDzgprAtDJcqA0IyESCtcxcF77Y_xS_blgs2ro4BJDJMdK0IU3qjKYXQB08W9exvcs8Yoad8kP34PrlLANj6bgZ0ThdUMg4B7XZTKvJimgu2y-s3_Vir3YR30hwL28.webp?r=bc0" alt="">
-                            <img src="https://occ-0-4995-2164.1.nflxso.net/dnm/api/v6/mAcAr9TxZIVbINe88xb3Teg5_OA/AAAABVYJK-B9YtOrPK5EVIvL3EOtJ2hkGeoXtXuubNIzPByKo_AF96DsrMFW_ZKMXRHBeEv1zO4_7Qq5e5D11WDS-WOMGNuV4uEFD7EKiX9zVqzCHVTQgkcW6Q1Ja95DtM1WpGRw.webp?r=49c" alt="">
-                            <img src="https://occ-0-4995-2164.1.nflxso.net/dnm/api/v6/mAcAr9TxZIVbINe88xb3Teg5_OA/AAAABUKSVRmIdByyGjapMskZfYtSDq5BobwVbRbnm3AO3Ujb8qOf6KHmKEmLq2titXZhW-5YSmtXe8WFw0RQFDFClMZv1nK83I6yR4PXkixvOi3ci6N8dZqSQ6FDBrqTX9F-6Ooq.webp?r=ff2" alt="">
-                            <img src="https://occ-0-4995-2164.1.nflxso.net/dnm/api/v6/mAcAr9TxZIVbINe88xb3Teg5_OA/AAAABe-a8uLoM3nUn40uMsf7404w3CXlOlZIOAfevHmyVVWFttW4IT_S1S6Vvzd0KUfu7QiFB7qkUPx5Dr3lcdfqYoNJj5VIsk0wmQAx0UzO69XQ34nH7epjKVUM60ocbz3k26fbBCZ_1T2ChvsTTsKLFlvMkP_Ispe6AaqvFZqUYOLXLYbf1RvB0o2LTUVk1ITf3BsdCWIbnG9DlJJBZD8Nm4LcknevjAA6nOulmX8u8F3cLTM0rq9Cwt8kvBjqK4PeaJz4MgTzYcqspIZGs3rdQbh7FKLq7WZf3xiFjAMgJPgaxn3DBcF4qkEI.webp?r=78f" alt="">
-                            <img src="https://occ-0-4995-2164.1.nflxso.net/dnm/api/v6/mAcAr9TxZIVbINe88xb3Teg5_OA/AAAABZnwPxPqJVByvIvHAzaxO31jNIDaJETSgtquefKxCVNEtkOheIxsEBCsZgIzZvwmZqpC5XaHrjZP5revXt-mOcOOAFeHR43dqQQrO-5qhhcVvukXm5MwKI7isB3EN3HHrTKMRlCuoiLxKJdUNDf-a3nZH7TQSYxQiJHxpQhERvdmway7LIX2_2xdhXxg0Q8uFvFGzpTxI2u2--LJYUJzP0enLnwh3X8fEFzGvMRUtfaVZHaQ3YWhHm5AC6qJ2fi5q8wM8tDgBYvGFLN3Qj1hak5Q91UjLnq8PEFiJ1zXTgguHrwdWq9kiArv.webp?r=53a" alt="">
-                            <img src="https://occ-0-4995-2164.1.nflxso.net/dnm/api/v6/mAcAr9TxZIVbINe88xb3Teg5_OA/AAAABbpHunLq1s1gH-BvPVKkjSim_GF1S67YP-Gjf129q-TYhVC2nfxmzGplaU9twTREm70ZrJydzqx1WoN44vLZ2BzpUkbcTM_dmAlYVNYDKFukxTXe_352aho8XlOzyAlFhcio.webp?r=2b5" alt="">
-                            <img src="https://occ-0-4995-2164.1.nflxso.net/dnm/api/v6/mAcAr9TxZIVbINe88xb3Teg5_OA/AAAABfF0ywlN9qxDh0g6qXZWFivnIYPwJcHKZXMpdbtC3e4UnzKFQr9XiF6sgUwFHTIqKkRGkNkhemS4dz6FyLfy6_mbHl6rqCYNmZX3bOPYdMLGixKmtUUk3wNcS6ATX1BtPaf1.webp?r=622" alt="">
-                            <img src="https://occ-0-4995-2164.1.nflxso.net/dnm/api/v6/mAcAr9TxZIVbINe88xb3Teg5_OA/AAAABWZr2Hb8KEVBZMAZxe9fqdP1rDHBMFjF6wbPKVO0kYwn8QgXLtca0hFX5-7wufs3IEB9W1qB74Q0cownhfB4nUhOn3ToH2WCLLfl2uqvWMiEPcpy4euBFvCK5YxbSvlx6Tt0.webp?r=66a" alt="">
-                    </div></div>       
-                <div class="frame"><h2 class="heading">Today's Top Picks for You</h2>
-                            <div class="Section1 margin1">
-                                <img src="https://occ-0-4995-2164.1.nflxso.net/dnm/api/v6/mAcAr9TxZIVbINe88xb3Teg5_OA/AAAABU4l77CbrsLHScpBXENMX14bTbruh2vmhKiieZXgJnIBXLGLUBsQHl0R15qMa3m5YX3EKUMwsZHPoikCKB3ERs6l0eKKIcs8z-dQJuAzIxZ1UJoxb498QFk2FMtWfTIfpa9E.webp?r=201" alt="">
-                                <img src="https://occ-0-4995-2164.1.nflxso.net/dnm/api/v6/mAcAr9TxZIVbINe88xb3Teg5_OA/AAAABdFz8i_YCgeToMVSLNyysTqBZcOTdy8v1DFiDF5rdYmnQTX4h-JqElRzbAuOkCc1Ve7u54m1Gc7F-LJqcMwQWK0seZgBPU5it5518CY0gx-0fVYVh00BEG2vqIFYpk46jdUl.webp?r=28a" alt="">
-                                <img src="https://occ-0-4995-2164.1.nflxso.net/dnm/api/v6/mAcAr9TxZIVbINe88xb3Teg5_OA/AAAABbuL6cLfT15uFN0Wy0D88atUkEh_7rXYauYheTAEsmXuFcTP-2gfkKwrBIOlK520ZfABzVvRNldgNr0cyRh3FYllh6Ra4zqVRE9_uJifHsniyamvuRkXGAognJ1IV7j1jgIb.webp?r=0bc" alt="">
-                                <img src="https://occ-0-4995-2164.1.nflxso.net/dnm/api/v6/mAcAr9TxZIVbINe88xb3Teg5_OA/AAAABZ9fil4dSMOVsFGtJX8XyJRWty_AUGjNRejFLZx8KldVWuHyRci2JayQPR4YXlpSLSzkOupSYyTycMQKmw6Zbdegwb4RKrCtP0E6oRssOAaK-8vdiEAPtAPr98QGgRbv4I0r.webp?r=bde" alt="">
-                                <img src="https://occ-0-4995-2164.1.nflxso.net/dnm/api/v6/mAcAr9TxZIVbINe88xb3Teg5_OA/AAAABZdi9JhyBXybf3wqcfTRjxztRzpngeZynF_TMC5z0m1gi3LzmJyZ5_wdFnugTpMX5lXIVe9-xfgx4xC8PwsSwi5F9B4gRXpPPv4O0Bi2BS1gyDUVwVutYSisFBAVCfu6XtSoCZbpRi4WIw8tMq9f8gt0e5mSjWyPaOdsFNR5uCGc5W7gbHadr7sOFoHArbpdBl9SmW16vBQgrWxT4ipzd2U7JNHeGEAE5M5_vVoToxTSpSE_wdl17KAyAA25WnRHGD_4qPxc-6n5-7k0inXU6OVqslL5ZRm6X-9eaY1Bi8nYMfjwDGdIdh0Z.webp?r=f57" alt="">
-                                <img src="https://occ-0-4995-2164.1.nflxso.net/dnm/api/v6/mAcAr9TxZIVbINe88xb3Teg5_OA/AAAABa80mGT1EzECFirp5ew0PbxZasWotB-EpSj5JGd-dTDHZYUCTYzrJ-oMLRp1Bzii_Ofgn8hs0t94ThywTlaX1tMU_HD4hgC-In0Cj0bRygNf1a_WvQDM9nyLeimwk_q6ugiG.webp?r=26c" alt="">
-                                <img src="https://occ-0-4995-2164.1.nflxso.net/dnm/api/v6/mAcAr9TxZIVbINe88xb3Teg5_OA/AAAABawh24TK03joNm6FxZjpqWNftuzc4wlG7S1YTVtneo7xo4STDTcwzTxH-hjksyiDRLAqRpsikIMzqRsxMAJIGAOa7prXeN1wIt0TPx6GpuHyq9fWWhhr7IqAZ9CSh9E7qJLs.webp?r=ac5" alt="">
-                                <img src="https://occ-0-4995-2164.1.nflxso.net/dnm/api/v6/mAcAr9TxZIVbINe88xb3Teg5_OA/AAAABS_k7Je0hJ3HLZeU7aX4e87WWn_N2NUNQ0LEBMIzKPNjzfpE1_1EOZn1kun51BXQkRfMHzcrq26un9yCXPjIcZFJN31CgncX7A94nybU3LqsMuNXwi9LxZle4N_zKYUc_hWW.webp?r=ddb" alt="">
-                    </div> </div> 
-            </div>     
-        </div>
+        <!-- Criminal Investigations Section -->
+        <section class="content-section">
+            <h2 class="section-heading">Criminal Investigation TV Shows</h2>
+            <div class="movies-row">
+                <div class="movie-card">
+                    <img class="img" src="https://occ-0-4995-2164.1.nflxso.net/dnm/api/v6/mAcAr9TxZIVbINe88xb3Teg5_OA/AAAABX8tbF8XAIgWLjoOUTzOPAZyqlwp22ncqkWnMMdmnUD5R2o5aqv_dvOXS8QgionXaI6snWhPBIAYmqFDSl4dsf2Yw-ekV2uPzMPUgMZdzBjliVhb0RBvvUH4tdLOwihjrrRn8MwV3cnzISUpm2J4fEt86gqhXJUgCFwFXTAPHeL00VRBoaVdLJm1r3T8HEoOeR_dRdELTYYvEy3H7OD0AwynACXBxkcim1F4ESe4W2GRCyRaMlsxOiDzgprAtDJcqA0IyESCtcxcF77Y_xS_blgs2ro4BJDJMdK0IU3qjKYXQB08W9exvcs8Yoad8kP34PrlLANj6bgZ0ThdUMg4B7XZTKvJimgu2y-s3_Vir3YR30hwL28.webp?r=bc0" alt="Show 1">
+                </div>
+                <div class="movie-card">
+                    <img class="img" src="https://occ-0-4995-2164.1.nflxso.net/dnm/api/v6/mAcAr9TxZIVbINe88xb3Teg5_OA/AAAABVYJK-B9YtOrPK5EVIvL3EOtJ2hkGeoXtXuubNIzPByKo_AF96DsrMFW_ZKMXRHBeEv1zO4_7Qq5e5D11WDS-WOMGNuV4uEFD7EKiX9zVqzCHVTQgkcW6Q1Ja95DtM1WpGRw.webp?r=49c" alt="Show 2">
+                </div>
+                <div class="movie-card">
+                    <img class="img" src="https://occ-0-4995-2164.1.nflxso.net/dnm/api/v6/mAcAr9TxZIVbINe88xb3Teg5_OA/AAAABUKSVRmIdByyGjapMskZfYtSDq5BobwVbRbnm3AO3Ujb8qOf6KHmKEmLq2titXZhW-5YSmtXe8WFw0RQFDFClMZv1nK83I6yR4PXkixvOi3ci6N8dZqSQ6FDBrqTX9F-6Ooq.webp?r=ff2" alt="Show 3">
+                </div>
+                <div class="movie-card">
+                    <img class="img" src="https://occ-0-4995-2164.1.nflxso.net/dnm/api/v6/mAcAr9TxZIVbINe88xb3Teg5_OA/AAAABe-a8uLoM3nUn40uMsf7404w3CXlOlZIOAfevHmyVVWFttW4IT_S1S6Vvzd0KUfu7QiFB7qkUPx5Dr3lcdfqYoNJj5VIsk0wmQAx0UzO69XQ34nH7epjKVUM60ocbz3k26fbBCZ_1T2ChvsTTsKLFlvMkP_Ispe6AaqvFZqUYOLXLYbf1RvB0o2LTUVk1ITf3BsdCWIbnG9DlJJBZD8Nm4LcknevjAA6nOulmX8u8F3cLTM0rq9Cwt8kvBjqK4PeaJz4MgTzYcqspIZGs3rdQbh7FKLq7WZf3xiFjAMgJPgaxn3DBcF4qkEI.webp?r=78f" alt="Show 4">
+                </div>
+                <div class="movie-card">
+                    <img class="img" src="https://occ-0-4995-2164.1.nflxso.net/dnm/api/v6/mAcAr9TxZIVbINe88xb3Teg5_OA/AAAABZnwPxPqJVByvIvHAzaxO31jNIDaJETSgtquefKxCVNEtkOheIxsEBCsZgIzZvwmZqpC5XaHrjZP5revXt-mOcOOAFeHR43dqQQrO-5qhhcVvukXm5MwKI7isB3EN3HHrTKMRlCuoiLxKJdUNDf-a3nZH7TQSYxQiJHxpQhERvdmway7LIX2_2xdhXxg0Q8uFvFGzpTxI2u2--LJYUJzP0enLnwh3X8fEFzGvMRUtfaVZHaQ3YWhHm5AC6qJ2fi5q8wM8tDgBYvGFLN3Qj1hak5Q91UjLnq8PEFiJ1zXTgguHrwdWq9kiArv.webp?r=53a" alt="Show 5">
+                </div>
+                <div class="movie-card">
+                    <img class="img" src="https://occ-0-4995-2164.1.nflxso.net/dnm/api/v6/mAcAr9TxZIVbINe88xb3Teg5_OA/AAAABbpHunLq1s1gH-BvPVKkjSim_GF1S67YP-Gjf129q-TYhVC2nfxmzGplaU9twTREm70ZrJydzqx1WoN44vLZ2BzpUkbcTM_dmAlYVNYDKFukxTXe_352aho8XlOzyAlFhcio.webp?r=2b5" alt="Show 5">
+                </div>
+                <div class="movie-card">
+                    <img class="img" src="https://occ-0-4995-2164.1.nflxso.net/dnm/api/v6/mAcAr9TxZIVbINe88xb3Teg5_OA/AAAABfF0ywlN9qxDh0g6qXZWFivnIYPwJcHKZXMpdbtC3e4UnzKFQr9XiF6sgUwFHTIqKkRGkNkhemS4dz6FyLfy6_mbHl6rqCYNmZX3bOPYdMLGixKmtUUk3wNcS6ATX1BtPaf1.webp?r=622" alt="Show 5">
+                </div>
+                <div class="movie-card">
+                    <img class="img" src="https://occ-0-4995-2164.1.nflxso.net/dnm/api/v6/mAcAr9TxZIVbINe88xb3Teg5_OA/AAAABWZr2Hb8KEVBZMAZxe9fqdP1rDHBMFjF6wbPKVO0kYwn8QgXLtca0hFX5-7wufs3IEB9W1qB74Q0cownhfB4nUhOn3ToH2WCLLfl2uqvWMiEPcpy4euBFvCK5YxbSvlx6Tt0.webp?r=66a" alt="Show 5">
+                </div>
+            </div>
+        </section>
+
+        <!-- Top Picks Section -->
+        <section class="content-section">
+            <h2 class="section-heading">Today's Top Picks for You</h2>
+            <div class="movies-row">
+                <div class="movie-card">
+                    <img class="img" src="https://occ-0-4995-2164.1.nflxso.net/dnm/api/v6/mAcAr9TxZIVbINe88xb3Teg5_OA/AAAABU4l77CbrsLHScpBXENMX14bTbruh2vmhKiieZXgJnIBXLGLUBsQHl0R15qMa3m5YX3EKUMwsZHPoikCKB3ERs6l0eKKIcs8z-dQJuAzIxZ1UJoxb498QFk2FMtWfTIfpa9E.webp?r=201" alt="Pick 1">
+                </div>
+                <div class="movie-card">
+                    <img class="img" src="https://occ-0-4995-2164.1.nflxso.net/dnm/api/v6/mAcAr9TxZIVbINe88xb3Teg5_OA/AAAABdFz8i_YCgeToMVSLNyysTqBZcOTdy8v1DFiDF5rdYmnQTX4h-JqElRzbAuOkCc1Ve7u54m1Gc7F-LJqcMwQWK0seZgBPU5it5518CY0gx-0fVYVh00BEG2vqIFYpk46jdUl.webp?r=28a" alt="Pick 2">
+                </div>
+                <div class="movie-card">
+                    <img class="img" src="https://occ-0-4995-2164.1.nflxso.net/dnm/api/v6/mAcAr9TxZIVbINe88xb3Teg5_OA/AAAABbuL6cLfT15uFN0Wy0D88atUkEh_7rXYauYheTAEsmXuFcTP-2gfkKwrBIOlK520ZfABzVvRNldgNr0cyRh3FYllh6Ra4zqVRE9_uJifHsniyamvuRkXGAognJ1IV7j1jgIb.webp?r=0bc" alt="Pick 3">
+                </div>
+                <div class="movie-card">
+                    <img class="img" src="https://occ-0-4995-2164.1.nflxso.net/dnm/api/v6/mAcAr9TxZIVbINe88xb3Teg5_OA/AAAABZ9fil4dSMOVsFGtJX8XyJRWty_AUGjNRejFLZx8KldVWuHyRci2JayQPR4YXlpSLSzkOupSYyTycMQKmw6Zbdegwb4RKrCtP0E6oRssOAaK-8vdiEAPtAPr98QGgRbv4I0r.webp?r=bde" alt="Pick 4">
+                </div>
+                <div class="movie-card">
+                    <img class="img" src="https://occ-0-4995-2164.1.nflxso.net/dnm/api/v6/mAcAr9TxZIVbINe88xb3Teg5_OA/AAAABZdi9JhyBXybf3wqcfTRjxztRzpngeZynF_TMC5z0m1gi3LzmJyZ5_wdFnugTpMX5lXIVe9-xfgx4xC8PwsSwi5F9B4gRXpPPv4O0Bi2BS1gyDUVwVutYSisFBAVCfu6XtSoCZbpRi4WIw8tMq9f8gt0e5mSjWyPaOdsFNR5uCGc5W7gbHadr7sOFoHArbpdBl9SmW16vBQgrWxT4ipzd2U7JNHeGEAE5M5_vVoToxTSpSE_wdl17KAyAA25WnRHGD_4qPxc-6n5-7k0inXU6OVqslL5ZRm6X-9eaY1Bi8nYMfjwDGdIdh0Z.webp?r=f57" alt="Pick 4">
+                </div>
+                <div class="movie-card">
+                    <img class="img" src="https://occ-0-4995-2164.1.nflxso.net/dnm/api/v6/mAcAr9TxZIVbINe88xb3Teg5_OA/AAAABa80mGT1EzECFirp5ew0PbxZasWotB-EpSj5JGd-dTDHZYUCTYzrJ-oMLRp1Bzii_Ofgn8hs0t94ThywTlaX1tMU_HD4hgC-In0Cj0bRygNf1a_WvQDM9nyLeimwk_q6ugiG.webp?r=26c" alt="Pick 4">
+                </div>
+                <div class="movie-card">
+                    <img class="img" src="https://occ-0-4995-2164.1.nflxso.net/dnm/api/v6/mAcAr9TxZIVbINe88xb3Teg5_OA/AAAABawh24TK03joNm6FxZjpqWNftuzc4wlG7S1YTVtneo7xo4STDTcwzTxH-hjksyiDRLAqRpsikIMzqRsxMAJIGAOa7prXeN1wIt0TPx6GpuHyq9fWWhhr7IqAZ9CSh9E7qJLs.webp?r=ac5" alt="Pick 4">
+                </div>
+                <div class="movie-card">
+                    <img class="img" src="https://occ-0-4995-2164.1.nflxso.net/dnm/api/v6/mAcAr9TxZIVbINe88xb3Teg5_OA/AAAABS_k7Je0hJ3HLZeU7aX4e87WWn_N2NUNQ0LEBMIzKPNjzfpE1_1EOZn1kun51BXQkRfMHzcrq26un9yCXPjIcZFJN31CgncX7A94nybU3LqsMuNXwi9LxZle4N_zKYUc_hWW.webp?r=ddb" alt="Pick 4">
+                </div>
+            </div>
+        </section>
     </main>
-
 </body>
 </html>
